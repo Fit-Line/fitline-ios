@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24E143AB2BDFA8EA006C0B16 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E143AA2BDFA8EA006C0B16 /* Typography.swift */; };
+		24E143AF2BDFFCF1006C0B16 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E143AC2BDFFCF0006C0B16 /* Pretendard-Regular.otf */; };
+		24E143B02BDFFCF1006C0B16 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E143AD2BDFFCF1006C0B16 /* Pretendard-SemiBold.otf */; };
+		24E143B12BDFFCF1006C0B16 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E143AE2BDFFCF1006C0B16 /* Pretendard-Bold.otf */; };
 		24EA603C2BDF7E2100D1D07C /* fitline_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA603B2BDF7E2100D1D07C /* fitline_iosApp.swift */; };
 		24EA603E2BDF7E2100D1D07C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA603D2BDF7E2100D1D07C /* ContentView.swift */; };
 		24EA60402BDF7E2200D1D07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EA603F2BDF7E2200D1D07C /* Assets.xcassets */; };
 		24EA60432BDF7E2200D1D07C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EA60422BDF7E2200D1D07C /* Preview Assets.xcassets */; };
-		DA929DF62BDF984D000876C6 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA929DF32BDF984D000876C6 /* Pretendard-Regular.otf */; };
-		DA929DF72BDF984D000876C6 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA929DF42BDF984D000876C6 /* Pretendard-SemiBold.otf */; };
-		DA929DF82BDF984D000876C6 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA929DF52BDF984D000876C6 /* Pretendard-Bold.otf */; };
 		DA929DFF2BDF9D8D000876C6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA929DFE2BDF9D8D000876C6 /* Fonts.swift */; };
-		DABE0C7B2BDF922B0094941A /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE0C7A2BDF922B0094941A /* Screen.swift */; };
+		DABE0C7B2BDF922B0094941A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE0C7A2BDF922B0094941A /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24E143AA2BDFA8EA006C0B16 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		24E143AC2BDFFCF0006C0B16 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		24E143AD2BDFFCF1006C0B16 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		24E143AE2BDFFCF1006C0B16 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		24EA60382BDF7E2100D1D07C /* fitline-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitline-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EA603B2BDF7E2100D1D07C /* fitline_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitline_iosApp.swift; sourceTree = "<group>"; };
 		24EA603D2BDF7E2100D1D07C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24EA603F2BDF7E2200D1D07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24EA60422BDF7E2200D1D07C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA929DF32BDF984D000876C6 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../Downloads/Pretendard-1.3.9/public/static/Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		DA929DF42BDF984D000876C6 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "../../../../../../Downloads/Pretendard-1.3.9/public/static/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		DA929DF52BDF984D000876C6 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../../Downloads/Pretendard-1.3.9/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		DA929DFB2BDF9AEF000876C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA929DFE2BDF9D8D000876C6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		DABE0C7A2BDF922B0094941A /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		DABE0C7A2BDF922B0094941A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E143A62BDFA8A5006C0B16 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DABE0C7A2BDF922B0094941A /* SplashScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		24E143A72BDFA8B7006C0B16 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				24E143AA2BDFA8EA006C0B16 /* Typography.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		24EA602F2BDF7E2100D1D07C = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +82,8 @@
 			children = (
 				DA929DFB2BDF9AEF000876C6 /* Info.plist */,
 				DABE95DD2BDF861500B65B0A /* Enum */,
-				DA248B5A2BDF80BA00EB8AFB /* Model */,
 				DA248B592BDF80AA00EB8AFB /* View */,
 				DA248B582BDF803000EB8AFB /* Extension */,
-				DA248B572BDF802A00EB8AFB /* API */,
 				24EA603B2BDF7E2100D1D07C /* fitline_iosApp.swift */,
 				24EA603D2BDF7E2100D1D07C /* ContentView.swift */,
 				24EA603F2BDF7E2200D1D07C /* Assets.xcassets */,
@@ -84,18 +100,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DA248B572BDF802A00EB8AFB /* API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		DA248B582BDF803000EB8AFB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				DA929DF22BDF97BE000876C6 /* Pretendard */,
-				DA929DFE2BDF9D8D000876C6 /* Fonts.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -103,55 +111,26 @@
 		DA248B592BDF80AA00EB8AFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DABE0C792BDF921B0094941A /* Splash */,
-				DABE95DC2BDF857000B65B0A /* Signup */,
-				DABE95DB2BDF856800B65B0A /* Signin */,
+				24E143A72BDFA8B7006C0B16 /* Shared */,
+				24E143A62BDFA8A5006C0B16 /* Screen */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		DA248B5A2BDF80BA00EB8AFB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		DA929DF22BDF97BE000876C6 /* Pretendard */ = {
 			isa = PBXGroup;
 			children = (
-				DA929DF52BDF984D000876C6 /* Pretendard-Bold.otf */,
-				DA929DF32BDF984D000876C6 /* Pretendard-Regular.otf */,
-				DA929DF42BDF984D000876C6 /* Pretendard-SemiBold.otf */,
+				24E143AE2BDFFCF1006C0B16 /* Pretendard-Bold.otf */,
+				24E143AC2BDFFCF0006C0B16 /* Pretendard-Regular.otf */,
+				24E143AD2BDFFCF1006C0B16 /* Pretendard-SemiBold.otf */,
 			);
 			path = Pretendard;
-			sourceTree = "<group>";
-		};
-		DABE0C792BDF921B0094941A /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				DABE0C7A2BDF922B0094941A /* Screen.swift */,
-			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
-		DABE95DB2BDF856800B65B0A /* Signin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Signin;
-			sourceTree = "<group>";
-		};
-		DABE95DC2BDF857000B65B0A /* Signup */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Signup;
 			sourceTree = "<group>";
 		};
 		DABE95DD2BDF861500B65B0A /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DA929DFE2BDF9D8D000876C6 /* Fonts.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -215,10 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EA60432BDF7E2200D1D07C /* Preview Assets.xcassets in Resources */,
-				DA929DF82BDF984D000876C6 /* Pretendard-Bold.otf in Resources */,
-				DA929DF62BDF984D000876C6 /* Pretendard-Regular.otf in Resources */,
+				24E143B12BDFFCF1006C0B16 /* Pretendard-Bold.otf in Resources */,
+				24E143AF2BDFFCF1006C0B16 /* Pretendard-Regular.otf in Resources */,
 				24EA60402BDF7E2200D1D07C /* Assets.xcassets in Resources */,
-				DA929DF72BDF984D000876C6 /* Pretendard-SemiBold.otf in Resources */,
+				24E143B02BDFFCF1006C0B16 /* Pretendard-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,10 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E143AB2BDFA8EA006C0B16 /* Typography.swift in Sources */,
 				DA929DFF2BDF9D8D000876C6 /* Fonts.swift in Sources */,
 				24EA603E2BDF7E2100D1D07C /* ContentView.swift in Sources */,
 				24EA603C2BDF7E2100D1D07C /* fitline_iosApp.swift in Sources */,
-				DABE0C7B2BDF922B0094941A /* Screen.swift in Sources */,
+				DABE0C7B2BDF922B0094941A /* SplashScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
