@@ -16,7 +16,7 @@ enum FontType {
     case Body
     case CaptionStrong
     case Caption
-    
+
     var setting: FontSetting {
         switch self {
         case .Display:

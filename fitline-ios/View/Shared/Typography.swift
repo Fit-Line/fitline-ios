@@ -11,7 +11,7 @@ struct CustomText: View {
     let text: String
     let color: Color
     let fontType: FontType
-    
+
     var body: some View {
         let fontSetting = fontType.setting
         Text(text)
@@ -20,4 +20,5 @@ struct CustomText: View {
             .kerning(fontSetting.kerning)
             .foregroundStyle(color)
     }
+    
 }
