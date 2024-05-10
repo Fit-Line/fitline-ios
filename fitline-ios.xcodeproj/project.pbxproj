@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249343F42BEDAF6E0081521C /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249343F32BEDAF6E0081521C /* Signin.swift */; };
 		24E143AB2BDFA8EA006C0B16 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E143AA2BDFA8EA006C0B16 /* Typography.swift */; };
 		24E143AF2BDFFCF1006C0B16 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E143AC2BDFFCF0006C0B16 /* Pretendard-Regular.otf */; };
 		24E143B02BDFFCF1006C0B16 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24E143AD2BDFFCF1006C0B16 /* Pretendard-SemiBold.otf */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		249343F32BEDAF6E0081521C /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		24E143AA2BDFA8EA006C0B16 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		24E143AC2BDFFCF0006C0B16 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		24E143AD2BDFFCF1006C0B16 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				DABE0C7A2BDF922B0094941A /* SplashScreen.swift */,
+				249343F32BEDAF6E0081521C /* Signin.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				24EA603E2BDF7E2100D1D07C /* ContentView.swift in Sources */,
 				24EA603C2BDF7E2100D1D07C /* fitline_iosApp.swift in Sources */,
 				DABE0C7B2BDF922B0094941A /* SplashScreen.swift in Sources */,
+				249343F42BEDAF6E0081521C /* Signin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
