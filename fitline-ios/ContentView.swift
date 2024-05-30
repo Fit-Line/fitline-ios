@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         if isActive {
             VStack {
-                CustomText(text: "This Is A Main Page", color: .Colors.Grayscale._90, fontType: .Title)
+                Signin()
             }
             .padding()
         } else {
@@ -26,7 +26,6 @@ struct ContentView: View {
                     }
                 }
         }
-        
     }
 }
 

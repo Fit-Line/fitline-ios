@@ -20,5 +20,4 @@ struct CustomText: View {
             .kerning(fontSetting.kerning)
             .foregroundStyle(color)
     }
-    
 }
