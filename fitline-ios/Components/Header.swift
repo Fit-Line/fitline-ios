@@ -1,43 +1,41 @@
 import SwiftUI
 
+extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = nil
+    }
+}
 struct Header: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    var title : String
     var body: some View {
         VStack {
             HStack {
-                Spacer()
-                CustomText(text: "Main Content", color: .Colors.Grayscale._90, fontType: .SubTitle)
-                Spacer()
-            }
-            .padding()
-            .frame(height: 44)
-        }
-        .navigationBarTitle("")
-        .navigationBarHidden(false)
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                    HStack {
-                        Image("LeftArrow")
-                            .resizable()
-                            .frame(width: 24, height: 24)
+                NavigationView {}.navigationTitle("")
+                    .navigationBarBackButtonHidden(true)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button(action: {
+                                presentationMode.wrappedValue.dismiss()
+                            }) {
+                                Image("LeftArrow")
+                                    .resizable()
+                                    .frame(width: 24, height: 24)
+                                    .offset(x: -24, y: 0)
+                                    .padding(12)
+                            }
+                        }
+                        ToolbarItem(placement: .principal) {
+                            CustomText(text: title, color: .Colors.Grayscale._90, fontType: .SubTitle)
+                        }
                     }
-                    .foregroundColor(.blue)
-                }
             }
-            ToolbarItem(placement: .principal) {
-                CustomText(text: "약관 동의", color: .Colors.Grayscale._90, fontType: .SubTitle)
-            }
-        }
+        }.frame(maxWidth: .infinity, maxHeight: 56)
+        Spacer()
     }
 }
 
 #Preview {
-    NavigationView {
-        Header()
-    }
+    Header(title: "약관 동의")
 }
