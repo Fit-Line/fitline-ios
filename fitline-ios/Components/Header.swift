@@ -1,11 +1,5 @@
 import SwiftUI
 
-extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        interactivePopGestureRecognizer?.delegate = nil
-    }
-}
 struct Header: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var title : String
