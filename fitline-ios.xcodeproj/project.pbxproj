@@ -17,6 +17,8 @@
 		24EA60402BDF7E2200D1D07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EA603F2BDF7E2200D1D07C /* Assets.xcassets */; };
 		24EA60432BDF7E2200D1D07C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EA60422BDF7E2200D1D07C /* Preview Assets.xcassets */; };
 		DA929DFF2BDF9D8D000876C6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA929DFE2BDF9D8D000876C6 /* Fonts.swift */; };
+		DABC2E0E2C0E700B00ABBB5E /* AgreeTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2E0D2C0E700B00ABBB5E /* AgreeTerm.swift */; };
+		DABC2E102C0E715400ABBB5E /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2E0F2C0E715400ABBB5E /* NextButton.swift */; };
 		DABE0C7B2BDF922B0094941A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE0C7A2BDF922B0094941A /* SplashScreen.swift */; };
 		DAD2376C2C08E109002E6BED /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2376B2C08E109002E6BED /* Header.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		24EA60422BDF7E2200D1D07C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA929DFB2BDF9AEF000876C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA929DFE2BDF9D8D000876C6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DABC2E0D2C0E700B00ABBB5E /* AgreeTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTerm.swift; sourceTree = "<group>"; };
+		DABC2E0F2C0E715400ABBB5E /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		DABE0C7A2BDF922B0094941A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		DAD2376B2C08E109002E6BED /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +58,7 @@
 			children = (
 				DABE0C7A2BDF922B0094941A /* SplashScreen.swift */,
 				249343F32BEDAF6E0081521C /* Signin.swift */,
+				DABC2E0D2C0E700B00ABBB5E /* AgreeTerm.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD2376B2C08E109002E6BED /* Header.swift */,
+				DABC2E0F2C0E715400ABBB5E /* NextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,9 +231,11 @@
 				24E143AB2BDFA8EA006C0B16 /* Typography.swift in Sources */,
 				DA929DFF2BDF9D8D000876C6 /* Fonts.swift in Sources */,
 				24EA603E2BDF7E2100D1D07C /* ContentView.swift in Sources */,
+				DABC2E102C0E715400ABBB5E /* NextButton.swift in Sources */,
 				DAD2376C2C08E109002E6BED /* Header.swift in Sources */,
 				24EA603C2BDF7E2100D1D07C /* fitline_iosApp.swift in Sources */,
 				DABE0C7B2BDF922B0094941A /* SplashScreen.swift in Sources */,
+				DABC2E0E2C0E700B00ABBB5E /* AgreeTerm.swift in Sources */,
 				249343F42BEDAF6E0081521C /* Signin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

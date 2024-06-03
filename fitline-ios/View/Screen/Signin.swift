@@ -20,7 +20,7 @@ struct Signin: View {
                 VStack {
                     Spacer()
 
-                    NavigationLink(destination: Header(title: "약관 동의")) {
+                    NavigationLink(destination: AgreeTerm()) {
                         HStack(spacing: 10) {
                             Image("GoogleLogo")
                                 .resizable()
