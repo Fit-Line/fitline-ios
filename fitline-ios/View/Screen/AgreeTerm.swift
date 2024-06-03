@@ -9,6 +9,9 @@ import SwiftUI
 
 
 struct AgreeTerm: View {
+    
+    @State private var isSelectedAll = false
+    
     var body: some View {
         Header(title: "약관 동의")
         NextButton(destination: NextPageView())
