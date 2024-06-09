@@ -7,7 +7,7 @@ struct NextButton<Destination: View>: View {
     var body: some View {
         NavigationLink(destination: isActive ? AnyView(destination) : AnyView(EmptyView())) {
             HStack(spacing: 4) {
-                CustomText(text: "다음", color: .Colors.Grayscale._10 , fontType: .BodyStrong)
+                CustomText(text: "다음", color: .Colors.Grayscale._10, fontType: .BodyStrong)
                 Image("RightArrow")
                     .resizable()
                     .frame(width: 18, height: 18)
@@ -24,17 +24,9 @@ struct NextButton<Destination: View>: View {
     }
 }
 
-struct NextPageView: View {
-    var body: some View {
-        Text("This is the next page")
-            .font(.largeTitle)
-            .padding()
-    }
-}
-
 #Preview {
     VStack(spacing: 20) {
-         NextButton(destination: NextPageView(), isActive: true)
-         NextButton(destination: NextPageView(), isActive: false)
-     }
+        NextButton(destination: ProfileInfo(), isActive: true)
+        NextButton(destination: ProfileInfo(), isActive: false)
+    }
 }

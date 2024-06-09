@@ -65,7 +65,7 @@ struct AgreeTerm: View {
                 }
                 .padding([.horizontal, .bottom], 24)
 
-                NextButton(destination: NextPageView(), isActive: isServiceTermsAccepted && isPrivacyPolicyAccepted)
+                NextButton(destination: ProfileInfo(), isActive: isServiceTermsAccepted && isPrivacyPolicyAccepted)
             }
         }
     }
