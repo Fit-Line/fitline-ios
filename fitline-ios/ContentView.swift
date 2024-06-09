@@ -14,14 +14,12 @@ extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate 
         interactivePopGestureRecognizer?.delegate = self
     }
 
-    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizerShouldBegin(_: UIGestureRecognizer) -> Bool {
         return viewControllers.count > 1
     }
 }
 
-
 struct ContentView: View {
-    
     @State private var isActive = false
 
     var body: some View {

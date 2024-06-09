@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Header: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    var title : String
+    var title: String
     var body: some View {
         VStack {
             HStack {
@@ -26,7 +26,6 @@ struct Header: View {
                     }
             }
         }.frame(maxWidth: .infinity, maxHeight: 56)
-        Spacer()
     }
 }
 
