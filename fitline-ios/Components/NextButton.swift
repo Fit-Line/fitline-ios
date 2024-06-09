@@ -33,5 +33,8 @@ struct NextPageView: View {
 }
 
 #Preview {
-    AgreeTerm()
+    VStack(spacing: 20) {
+         NextButton(destination: NextPageView(), isActive: true)
+         NextButton(destination: NextPageView(), isActive: false)
+     }
 }
