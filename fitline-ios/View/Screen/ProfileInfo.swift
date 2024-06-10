@@ -1,5 +1,5 @@
-import SwiftUI
 import Combine
+import SwiftUI
 
 struct ProfileInfo: View {
     @State private var name: String = ""
@@ -7,9 +7,9 @@ struct ProfileInfo: View {
     @State private var weight: String = ""
     @State private var age: String = ""
     @State private var bodyFat: String = ""
-    
+
     @State private var showGenderPicker = false
-    
+
     var body: some View {
         VStack {
             Header(title: "프로필")
@@ -18,7 +18,7 @@ struct ProfileInfo: View {
                     CustomText(text: "정보를\n입력해주세요", color: .Colors.Grayscale._90, fontType: .Title)
                         .padding(.horizontal, 24)
                         .padding(.bottom, 20)
-                    
+
                     Group {
                         inputField(title: "별명", placeholder: "별명을 입력해주세요", text: $name, isRequired: true, maxLength: 8)
                         genderField(title: "성별", placeholder: "성별을 선택해주세요", text: $gender, isRequired: true)
@@ -37,15 +37,15 @@ struct ProfileInfo: View {
             ActionSheet(title: Text("성별을 선택해주세요"), buttons: [
                 .default(Text("남자")) { gender = "남자" },
                 .default(Text("여자")) { gender = "여자" },
-                .cancel()
+                .cancel(),
             ])
         }
     }
-    
+
     private var isFormValid: Bool {
         return !name.isEmpty && !gender.isEmpty && !weight.isEmpty && !age.isEmpty
     }
-    
+
     private func inputField(title: String, placeholder: String, text: Binding<String>, isRequired: Bool, maxLength: Int? = nil) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 2) {
@@ -69,7 +69,7 @@ struct ProfileInfo: View {
                 )
         }
     }
-    
+
     private func genderField(title: String, placeholder: String, text: Binding<String>, isRequired: Bool) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 2) {
@@ -98,7 +98,7 @@ struct ProfileInfo: View {
             )
         }
     }
-    
+
     private func inputFieldWithSuffix(title: String, placeholder: String, text: Binding<String>, isRequired: Bool, suffix: String, allowedCharacters: String, maxValue: Int? = nil) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 2) {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NickName: View {
     @State private var nickname: String = ""
-    
+
     private var isNicknameValid: Bool {
         return !nickname.isEmpty
     }
@@ -20,7 +20,7 @@ struct NickName: View {
                 Header(title: "프로필")
                 VStack(alignment: .leading, spacing: 20) {
                     CustomText(text: "닉네임을\n입력해주세요", color: .Colors.Grayscale._90, fontType: .Title)
-                    
+
                     ZStack(alignment: .trailing) {
                         TextField("닉네임을 입력해주세요", text: $nickname)
                             .padding(.vertical, 11)
@@ -30,7 +30,7 @@ struct NickName: View {
                                     .foregroundColor(Color.Colors.Grayscale._90),
                                 alignment: .bottom
                             )
-                        
+
                         if !nickname.isEmpty {
                             Button(action: {
                                 nickname = ""
@@ -39,16 +39,15 @@ struct NickName: View {
                                     .resizable()
                                     .frame(width: 18, height: 18)
                                     .foregroundColor(.Colors.Grayscale._60)
-                                    
                                     .padding(.trailing, 5)
                             }
                         }
                     }
                 }
                 .padding(.horizontal, 24)
-                
+
                 Spacer()
-                
+
                 NextButton(destination: EmptyView(), isActive: isNicknameValid)
             }
         }

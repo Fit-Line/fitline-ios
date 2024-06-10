@@ -44,13 +44,13 @@ struct AgreeTerm: View {
                     ToggleButtonWithLabel(isToggleOn: $isSelectedAll) {
                         CustomText(text: "필수 약관 전체동의", color: .Colors.Grayscale._90, fontType: .BodyStrong)
                     }
-                    .onChange(of: isSelectedAll) { newValue in
+                    .onChange(of: isSelectedAll) { oldValue, newValue in
                         withAnimation {
                             isServiceTermsAccepted = newValue
                             isPrivacyPolicyAccepted = newValue
                         }
-                    }
 
+                    }
                     Divider()
                         .background(Color.Colors.Grayscale._20)
 
