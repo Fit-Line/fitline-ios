@@ -30,7 +30,7 @@ struct ProfileInfo: View {
                 }
             }
             Spacer()
-            NextButton(destination: EmptyView(), isActive: isFormValid)
+            NextButton(destination: NickName(), isActive: isFormValid)
                 .ignoresSafeArea(.keyboard, edges: .bottom)
         }
         .actionSheet(isPresented: $showGenderPicker) {
