@@ -11,24 +11,27 @@ struct ProfileInfo: View {
     @State private var showGenderPicker = false
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading) {
-                Header(title: "프로필")
-                CustomText(text: "정보를\n입력해주세요", color: .Colors.Grayscale._90, fontType: .Title)
-                    .padding(EdgeInsets(top: 0, leading: 24, bottom: 20, trailing: 0))
-                
+        VStack {
+            Header(title: "프로필")
+            ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
-                    inputField(title: "별명", placeholder: "별명을 입력해주세요", text: $name, isRequired: true, maxLength: 8)
-                    genderField(title: "성별", placeholder: "성별을 선택해주세요", text: $gender, isRequired: true)
-                    inputFieldWithSuffix(title: "몸무게", placeholder: "몸무게를 입력해주세요", text: $weight, isRequired: true, suffix: "kg", allowedCharacters: "0123456789.", maxValue: 200)
-                    inputFieldWithSuffix(title: "나이", placeholder: "나이를 입력해주세요", text: $age, isRequired: true, suffix: "세", allowedCharacters: "0123456789", maxValue: 99)
-                    inputFieldWithSuffix(title: "체지방", placeholder: "체지방을 입력해주세요", text: $bodyFat, isRequired: false, suffix: "%", allowedCharacters: "0123456789.")
-                }.padding(.horizontal, 24)
-                
-                Spacer()
-                
-                NextButton(destination: EmptyView(), isActive: isFormValid)
+                    CustomText(text: "정보를\n입력해주세요", color: .Colors.Grayscale._90, fontType: .Title)
+                        .padding(.horizontal, 24)
+                        .padding(.bottom, 20)
+                    
+                    Group {
+                        inputField(title: "별명", placeholder: "별명을 입력해주세요", text: $name, isRequired: true, maxLength: 8)
+                        genderField(title: "성별", placeholder: "성별을 선택해주세요", text: $gender, isRequired: true)
+                        inputFieldWithSuffix(title: "몸무게", placeholder: "몸무게를 입력해주세요", text: $weight, isRequired: true, suffix: "kg", allowedCharacters: "0123456789.", maxValue: 200)
+                        inputFieldWithSuffix(title: "나이", placeholder: "나이를 입력해주세요", text: $age, isRequired: true, suffix: "세", allowedCharacters: "0123456789", maxValue: 99)
+                        inputFieldWithSuffix(title: "체지방", placeholder: "체지방을 입력해주세요", text: $bodyFat, isRequired: false, suffix: "%", allowedCharacters: "0123456789.")
+                    }
+                    .padding(.horizontal, 24)
+                }
             }
+            Spacer()
+            NextButton(destination: EmptyView(), isActive: isFormValid)
+                .ignoresSafeArea(.keyboard, edges: .bottom)
         }
         .actionSheet(isPresented: $showGenderPicker) {
             ActionSheet(title: Text("성별을 선택해주세요"), buttons: [
